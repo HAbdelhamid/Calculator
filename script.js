@@ -1,6 +1,11 @@
-const display = $('.display-screen');
+// Tried to use jquery here to select some elemnts from Html
+/*
+const display = $('#display');
 const buttons = $('button');
-console.log(display, buttons);
+*/
+// Finally i end up using js vanilla syntax
+const display = document.querySelector("#display");
+const buttons = document.querySelectorAll("button");
 
 buttons.forEach((item) => {
     item.onclick = () => {
